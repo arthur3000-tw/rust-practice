@@ -10,12 +10,12 @@ struct Point(i32, i32, i32);
 
 struct AlwaysEqual;
 
-struct User2 {
-    active: bool,
-    username: &str,
-    email: &str,
-    sign_in_count: u64,
-}
+// struct User2 {
+//     active: bool,
+//     username: &str,
+//     email: &str,
+//     sign_in_count: u64,
+// }
 
 fn main() {
     let mut user1 = User {
@@ -43,12 +43,12 @@ fn main() {
 
     let subject = AlwaysEqual;
 
-    let user4 = User2 {
-        active: true,
-        username: "someusername123",
-        email: "someone@example.com",
-        sign_in_count: 1,
-    };
+    // let user4 = User2 {
+    //     active: true,
+    //     username: "someusername123",
+    //     email: "someone@example.com",
+    //     sign_in_count: 1,
+    // };
 }
 
 fn build_user(email: String, username: String) -> User {
